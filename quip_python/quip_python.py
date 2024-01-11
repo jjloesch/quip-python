@@ -165,21 +165,6 @@ class QuipClient(Quip):
             search_results_dct.update({result['thread']['title']: result['thread']['id']})
         return search_results_dct
 
-    ####################################
-    # def new_folder(self, title, parent_id=None, color=None, member_ids=[]):
-    #    """Create a new folder color / title with the given parent ID."""
-    #    return self._fetch_json("folders/new", post_data={
-    #        "title": title,
-    #       "parent_id": parent_id,
-    #        "color": color,
-    #        "member_ids": ",".join(member_ids),
-    #    })
-    #
-    # def get_folder(self, id):
-    #    """Returns the folder with the given ID."""
-    #    return self._fetch_json("folders/" + id)
-    ####################################
-
 
 class QuipUser(QuipClient):
     """A QuipUser object"""
